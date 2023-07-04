@@ -21,4 +21,6 @@
        (lem:syntax-function-name-attribute :foreground ,(color :base0D))
        (lem:syntax-variable-attribute :foreground ,(color :base08))
        (lem:syntax-type-attribute :foreground ,(color :base0A))
-       (lem:syntax-builtin-attribute :foreground ,(color :base0C)))))
+       (lem:syntax-builtin-attribute :foreground ,(color :base0C))
+       ,@(loop :for (name color) :on colors :by #'cddr
+               :collect (list name color)))))
