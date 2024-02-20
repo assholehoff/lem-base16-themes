@@ -3426,7 +3426,7 @@
   :base0F "#bc9458")
 
 ;; Scheme: seti
-;; Scheme author: 
+;; Scheme author:
 
 (define-base16-color-theme "seti"
   :base00 "#151718"
@@ -3844,3 +3844,24 @@
   :base0D "#7cb8bb"
   :base0E "#dc8cc3"
   :base0F "#000000")
+
+;; Scheme: modus-vivendi
+;; Scheme author: Protesilaos Stavrou
+
+(define-base16-color-theme "modus-vivendi"
+  :base00 "#000000"
+  :base01 "#535353"
+  :base02 "#5a5a5a"
+  :base03 "#989898"
+  :base04 "#b6a0ff"
+  :base05 "#ffffff"
+  :base06 "#dfcf43"
+  :base07 "#fefefe"
+  :base08 "#fec43f"
+  :base09 "#00bcff"
+  :base0A "#6ae4b9"
+  :base0B "#79a8ff"
+  :base0C "#f78fe7"
+  :base0D "#feacd0"
+  :base0E "#b6a0ff"
+  :base0F "#12154a")
