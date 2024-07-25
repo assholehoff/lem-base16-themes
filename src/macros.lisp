@@ -44,6 +44,14 @@
         :foreground ,(color :base01) :background ,(color :base04) :bold t)
        (lem/frame-multiplexer:frame-multiplexer-background-attribute
         :foreground ,(color :base0A) :background ,(color :base01))
+
+       ;; Paren coloring
+       (lem-lisp-mode/paren-coloring:paren-color-1 :foreground ,(color :base08))
+       (lem-lisp-mode/paren-coloring:paren-color-2 :foreground ,(color :base09))
+       (lem-lisp-mode/paren-coloring:paren-color-3 :foreground ,(color :base0A))
+       (lem-lisp-mode/paren-coloring:paren-color-4 :foreground ,(color :base0B))
+       (lem-lisp-mode/paren-coloring:paren-color-5 :foreground ,(color :base0C))
+       (lem-lisp-mode/paren-coloring:paren-color-6 :foreground ,(color :base0D))
        
        ,@(loop :for (name color) :on colors :by #'cddr
                :collect (list name color)))))
