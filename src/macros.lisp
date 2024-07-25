@@ -24,6 +24,8 @@
        (lem:syntax-builtin-attribute :foreground ,(color :base0C))
 
        ;; Modeline
+       (lem:modeline :background ,(color :base02) :foreground ,(color :base07))
+       (lem:modeline-inactive :background ,(color :base01) :foreground ,(color :base03))
        (lem:modeline-name-attribute :foreground ,(color :base09))
        (lem:inactive-modeline-name-attribute :foreground ,(color :base03))
        (lem:modeline-major-mode-attribute :foreground ,(color :base0D))
