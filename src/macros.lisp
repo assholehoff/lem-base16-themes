@@ -22,5 +22,36 @@
        (lem:syntax-variable-attribute :foreground ,(color :base08))
        (lem:syntax-type-attribute :foreground ,(color :base0A))
        (lem:syntax-builtin-attribute :foreground ,(color :base0C))
+       
+       ;; Modeline
+       (lem:modeline :background ,(color :base02) :foreground ,(color :base07))
+       (lem:modeline-inactive :background ,(color :base01) :foreground ,(color :base03))
+       (lem:modeline-name-attribute :foreground ,(color :base09))
+       (lem:inactive-modeline-name-attribute :foreground ,(color :base03))
+       (lem:modeline-major-mode-attribute :foreground ,(color :base0D))
+       (lem:inactive-modeline-major-mode-attribute :foreground ,(color :base03))
+       (lem:modeline-minor-modes-attribute :foreground ,(color :base07))
+       (lem:inactive-modeline-minor-modes-attribute :foreground ,(color :base03))
+       (lem:modeline-position-attribute :foreground ,(color :base06) :background ,(color :base01))
+       (lem:inactive-modeline-position-attribute :foreground ,(color :base03) :background ,(color :base01))
+       (lem:modeline-posline-attribute :foreground ,(color :base00) :background ,(color :base05))
+       (lem:inactive-modeline-posline-attribute :foreground ,(color :base00) :background ,(color :base02))
+
+       ;; Multiplexer
+       (lem/frame-multiplexer:frame-multiplexer-active-frame-name-attribute
+        :foreground ,(color :base01) :background ,(color :base0A) :bold t)
+       (lem/frame-multiplexer:frame-multiplexer-frame-name-attribute
+        :foreground ,(color :base01) :background ,(color :base04) :bold t)
+       (lem/frame-multiplexer:frame-multiplexer-background-attribute
+        :foreground ,(color :base0A) :background ,(color :base01))
+
+       ;; Paren coloring
+       (lem-lisp-mode/paren-coloring:paren-color-1 :foreground ,(color :base08))
+       (lem-lisp-mode/paren-coloring:paren-color-2 :foreground ,(color :base09))
+       (lem-lisp-mode/paren-coloring:paren-color-3 :foreground ,(color :base0A))
+       (lem-lisp-mode/paren-coloring:paren-color-4 :foreground ,(color :base0B))
+       (lem-lisp-mode/paren-coloring:paren-color-5 :foreground ,(color :base0C))
+       (lem-lisp-mode/paren-coloring:paren-color-6 :foreground ,(color :base0D))
+       
        ,@(loop :for (name color) :on colors :by #'cddr
                :collect (list name color)))))
