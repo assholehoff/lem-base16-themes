@@ -52,6 +52,25 @@
        (lem-lisp-mode/paren-coloring:paren-color-4 :foreground ,(color :base0B))
        (lem-lisp-mode/paren-coloring:paren-color-5 :foreground ,(color :base0C))
        (lem-lisp-mode/paren-coloring:paren-color-6 :foreground ,(color :base0D))
+
+       ;; Document
+       (lem:document-header1-attribute :foreground ,(color :base0D) :bold t)
+       (lem:document-header2-attribute :foreground ,(color :base0C) :bold t)
+       (lem:document-header3-attribute :foreground ,(color :base0B) :bold t)
+       (lem:document-header4-attribute :foreground ,(color :base0A) :bold t)
+       (lem:document-header5-attribute :foreground ,(color :base09) :bold t)
+       (lem:document-header6-attribute :foreground ,(color :base08) :bold t)
+       (lem:document-bold-attribute :bold t)
+       (lem:document-italic-attribute :foreground ,(color :base0E))
+       (lem:document-underline-attribute :underline t)
+       (lem:document-link-attribute :foreground ,(color :base0D) :underline t)
+       (lem:document-list-attribute :foreground ,(color :base0C))
+       (lem:document-code-block-attribute :background ,(color :base01) :foreground ,(color :base05))
+       (lem:document-inline-code-attribute :background ,(color :base01) :foreground ,(color :base0F))
+       (lem:document-blockquote-attribute :foreground ,(color :base03))
+       (lem:document-table-attribute :foreground ,(color :base05) :background ,(color :base01))
+       (lem:document-task-list-attribute :foreground ,(color :base0B))
+       (lem:document-metadata-attribute :foreground ,(color :base0D))
        
        ,@(loop :for (name color) :on colors :by #'cddr
                :collect (list name color)))))
